@@ -1,0 +1,72 @@
+﻿body {
+    background-image: linear-gradient(to right, #5e81a8 ,#3ee67e);
+}
+
+.container{
+   
+    height: 50vh;
+    width: 100vw;
+    justify-content: center;
+    align-items:center;
+
+}
+.container .fill{
+    height: 350px;
+    width: 2500px;
+    background: url(sang1.webp);
+    background-size: 50%;
+    transition: 0.5s; 
+    cursor: pointer;
+    background-repeat: no-repeat;
+}
+.container .fill:hover{
+    background-size: -70%;
+    background:blur(35px) ;
+}
+
+.h h1{
+    text-align: center;
+}
+.para{
+    width: 20;
+    align-items: center;
+}
+p{
+    font-size: 40px;
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.glow{
+    position: relative;
+    display: inline-block;
+    padding: 30px 30px;
+    text-decoration: rgb(84, 236, 24);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    bottom: -10px;
+    text-align: center;
+    color: white;
+}
+.glow img{
+    height: 200x;
+    width: 350px;
+}
+a:hover{
+    color: white;
+    background: rgb(255,0,0);
+    box-shadow: 0 0 10px rgb(255,0,0),0 0 40px rgb(255,0,0),0 0 80px rgb(255,0,0);
+}
+a:link {
+    color: white;
+    
+    text-decoration: none;
+  }

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000000ab;
+    overflow: hidden;
+    padding: 100px 20px;
+    box-sizing: border-box;
+}
+section::before
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ef3b36;
+    clip-path: circle(65% at 100% -20%);
+
+}
+section::after
+{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #47aafa;
+    clip-path: circle(35% at 0% 100%);
+}
+.container{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 20px 40px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+}
+.container .card .imgBx{
+    position: relative;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgBx{
+    transform: translateY(-100px);
+}
+.container .card .imgBx img{
+    max-width: 60%;
+    margin: 0 0 20px;
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgBx img{
+    transform: translate(-20px,-10px) rotate(-7deg) scale(1.45);
+}
+.container .card .imgBx h2{
+    color: #fff;
+    font-weight: 600;
+}
+.container .card .content{
+    position: absolute;
+    bottom: -150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.container .card:hover .content{
+    opacity: 1;
+    visibility: visible;
+}
+
+.container .card .content .menu .ratings{
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    bottom: 10px;
+    transform: translate(-70%, -70%);
+}
+.checked{
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
